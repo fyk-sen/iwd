@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <video autoplay muted loop src="video/showcase.mp4"></video>
+
+
+        <header>
+            <img src="images/icons/navigation/logo.png" alt="logo">
+
+            <hr>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <div>
+
+                <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+
+                    <h1>Select your food of choice</h1>
+
+                    <fieldset>
+                        <div id="menugrid">
+                            <div>
+                                <input type="checkbox" value="vs1" name="vs1order">VS Phở Bò Classic <br>
+                                <div>
+                                    <img src="images/menu/vs1.png" alt="vs1">
+                                </div>
+                                <p><span>$10.90</span></p>
+
+                                Quantity: <input type="number" name="vs1quantity" id="vs1" min="0" placeholder="0">
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="vs2" name="orderitem">VS Minced Pork Ball Hot Plate<br>
+                                <div>
+                                    <img src="images/menu/vs2.png" alt="vs2">
+                                </div>
+                                <p><span>$11.90</span></p>
+
+                                Quantity: <input type="number" name="orderquantity" id="vs2" min="0" placeholder="0">
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="vs3" name="orderitem">VS Beef Ragout<br>
+                                <div>
+                                    <img src="images/menu/vs3.png" alt="vs3">
+                                </div>
+                                <p><span>$12.90</span></p>
+
+                                Quantity: <input type="number" name="orderquantity" id="vs3" min="0">
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="vs4" name="orderitem">VS Shrimp Hotpot<br>
+                                <div>
+                                    <img src="images/menu/vs4.png" alt="vs4">
+                                </div>
+                                <p><span>$14.90</span></p>
+
+                                Quantity: <input type="number" name="orderquantity" id="vs4" min="0" placeholder="0">
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="vs5" name="orderitem">VS Fish Hotpot<br>
+                                <div>
+                                    <img src="images/menu/vs5.png" alt="vs5">
+                                </div>
+                                <p><span>$14.90</span></p>
+
+                                Quantity: <input type="number" name="orderquantity" id="vs5" min="0" placeholder="0">
+                            </div>
+
+                            <div>
+                                <input type="checkbox" value="vs6" name="orderitem">VS Family Set (3-4) Pax<br>
+                                <div>
+                                    <img src="images/menu/vs6.png" alt="vs6">
+                                </div>
+                                <p><span>$30.90</span></p>
+
+                                Quantity: <input type="number" name="orderquantity" id="vs6" min="0" placeholder="0">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <table>
+                            <tr>
+                                <th>Dietary Restrictions</th>
+                                <th>Order Type</th>
+                                <th>Special Requests</th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <select name="dietaryrestrictions" id="dietaryrestrictions">
+                                        <option value="default">&mdash;Please Select &mdash;</option>
+                                        <option value="none">None</option>
+                                        <option value="nodairy">No Dairy</option>
+                                        <option value="nomeat">No Meat</option>
+                                        <option value="nopork">No Pork</option>
+                                    </select>
+                                </td>
+
+                                <td>
+                                    <div id="radiogroup">
+                                        <input type="radio" name="ordertype" id="dinein" value="dinein" required>Dine In
+                                        <br>
+                                        <input type="radio" name="ordertype" id="takeaway" value="takeaway">Take Away
+                                        <br>
+                                        <input type="radio" name="ordertype" id="bydelievery" value="bydelievery">By
+                                        Delievery
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <textarea name="specialrequests" id="specialrequests" cols="30" rows="1"
+                                        placeholder="Add more noodles"></textarea>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+
+
+                    <div class="buttonflex">
+                        <input type="submit" class="buttonchild" value="Submit">
+                        <input type="reset" class="buttonchild" value="Reset">
+                    </div>
+
+
+                </form>
+            </div>
+        </main>
+
+        <footer><a href="https://github.com/fyk-sen">Fyxen</a> &copy;2023 &mdash; All rights reserved.</footer>
+
+    </div>
+</body>
+
+</html>
