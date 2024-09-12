@@ -1,0 +1,64 @@
+ main {
+     justify-content: center;
+ }
+
+ fieldset {
+     padding: 3%;
+     border: 1px solid rgb(254, 159, 0);
+     border-radius: 3%;
+     background-color: rgba(0, 0, 0, 50%);
+     height: 100%;
+     text-align: center;
+ }
+
+ input[placeholder],
+ textarea[placeholder] {
+     text-align: center;
+     color: rgb(254, 159, 0);
+ }
+
+
+ label,
+ input,
+ textarea {
+     margin: 1%;
+ }
+
+ .signupkey {
+     margin: 2% 0%;
+ }
+
+ input,
+ select,
+ textarea {
+     border: 0;
+     border-bottom: 1px solid rgba(254, 159, 0, 50%);
+     background-color: transparent;
+ }
+
+ input:focus {
+     border-bottom: 2px solid rgb(254, 159, 0);
+     transition: 0.5s;
+ }
+
+
+ .buttonflex {
+     display: flex;
+     justify-content: center;
+ }
+
+ .buttonchild {
+     display: flex;
+     align-items: center;
+     padding: 1%;
+     border: 1px solid rgb(254, 159, 0);
+     border-radius: 10%;
+     background-color: rgba(0, 0, 0, 50%);
+ }
+
+ .buttonchild:hover {
+     color: black;
+     background-color: rgb(254, 159, 0);
+     transition: 0.5s;
+     transform: scale(1.1);
+ }

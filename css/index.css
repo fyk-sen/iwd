@@ -1,0 +1,95 @@
+#promotiongrid {
+
+    border-radius: 3%;
+    gap: 3%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3%;
+
+}
+
+#promotiongrid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+#promotiongrid img:hover {
+    transform: translate(0%, -5%);
+    transition: 0.5s;
+}
+
+#story,
+#about {
+    margin: 2%;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    'image content';
+    grid-template-columns: 1fr 2fr;
+}
+
+.info { 
+    grid-area: content;
+    padding: 3%;
+}
+
+#story img, #about img { grid-area: image;} 
+
+#cta {
+    text-align: center;
+    margin: 3%;
+}
+
+#cta a {
+    background-color: transparent;
+    border: 1px solid rgb(254, 159, 0);
+    padding: 1%;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+#cta a:hover {
+    background-color: rgb(254, 159, 0);
+    padding: 1%;
+    border-radius: 5%;
+    text-decoration: none;
+    transition: 0.5s;
+    color: black;
+
+
+}
+
+#cta:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.sectionimage {
+    width: 100%;
+    border-radius: 5%;
+    margin: 3%;
+}
+
+#promoh1 {
+    text-align: center;
+}
+
+#story p,
+#about p {
+    text-align: justify;
+    padding: 1%;
+}
+
+#about {
+    flex-direction: row-reverse;
+}
+
+#ctapromo {
+    background-color: rgba(0, 0, 0, 50%);
+    border-radius: 3%;
+    border: 1px solid rgb(254, 159, 0);
+}

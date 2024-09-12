@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#find {
+    background-color: rgba(0, 0, 0, 50%);
+    border: 1px solid rgb(254, 159, 0);
+    border-radius: 3%;
+}
+
+#contact,
+#find {
+    padding: 0% 3%;
+    flex: 1;
+}
+
+
+/* locations */
+
+.outlet {
+    margin: 3% 0%;
+}
+
+iframe {
+    border-radius: 3%;
+}
+
+img {
+    width: 25%;
+}
+
+.outlet:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.socials {
+    margin: 5%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.socials:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}

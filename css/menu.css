@@ -1,0 +1,75 @@
+#chefgrid {
+    display: grid;
+    gap: 3%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+
+#vs1,
+#vs2,
+#vs3,
+#vs4,
+#vs5,
+#vs6 {
+    position: relative;
+    background-color: black;
+    border-radius: 5%;
+}
+
+#vstext1,
+#vstext2,
+#vstext3,
+#vstext4,
+#vstext5,
+#vstext6 {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+#vs1:hover,
+#vs2:hover,
+#vs3:hover,
+#vs4:hover,
+#vs5:hover,
+#vs6:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#vs1:hover #vstext1,
+#vs2:hover #vstext2,
+#vs3:hover #vstext3,
+#vs4:hover #vstext4,
+#vs5:hover #vstext5,
+#vs6:hover #vstext6 {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#vs1:hover img,
+#vs2:hover img,
+#vs3:hover img,
+#vs4:hover img,
+#vs5:hover img,
+#vs6:hover img {
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+span {
+    font-weight: bold;
+    font-size: 32px;
+}
