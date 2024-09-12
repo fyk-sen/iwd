@@ -16,7 +16,7 @@ This repository is meant to serve as a long overdue showcase of the author's HTM
 
 Updates may follow if revisited!
 
-View a preview of this repository [here]().
+View a preview of this repository [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/fyk-sen/iwd/main/index.html).
 
 ## Contributing
 Contributions are appreciated and can done by [opening an issue](https://github.com/fyk-sen/iwd/issues/new) or [submitting a pull request](https://github.com/fyk-sen/iwd/compare)!
